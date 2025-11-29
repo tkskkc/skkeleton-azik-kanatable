@@ -40,8 +40,8 @@ function! skkeleton#azik#add_table(...) abort
   \  "!": ["！", ""],
   \  ",": ["、", ""],
   \  "-": ["ー", ""],
-  \  ".": ["。", ""],
   \  ":": ["ー", ""],
+  \  ".": ["。", ""],
   \  "?": ["？", ""],
   \  "[": ["「", ""],
   \  "]": ["」", ""],
@@ -583,18 +583,7 @@ function! skkeleton#azik#add_table(...) abort
   " 促音
   call skkeleton#register_kanatable('azik', {
   \  ";": ["っ", ""],
-  \  "bb": ["っ", "b"],
-  \  "cc": ["っ", "c"],
-  \  "ff": ["っ", "f"],
-  \  "gg": ["っ", "g"],
-  \  "mm": ["っ", "m"],
-  \  "ss": ["っ", "s"],
-  \  "vv": ["っ", "v"],
-  \  "ww": ["っ", "w"],
-  \  "xtsu": ["っ", ""],
-  \  "xtu": ["っ", ""],
-  \  "xx": ["っ", "x"],
-  \  "yy": ["っ", "y"],
+  \  "xt": ["っ", ""],
   \ })
 
   " 撥音
@@ -640,7 +629,6 @@ function! skkeleton#azik#set_keyconfig() abort
   call skkeleton#register_kanatable('azik', {
   \  " ": "henkanFirst",
   \  "^": "henkanPoint",
-  \  "<s-l>": "zenkaku",
   \  "'": "katakana",
   \  "/": "abbrev",
   \ })
